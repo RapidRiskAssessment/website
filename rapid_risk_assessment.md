@@ -128,8 +128,6 @@ This is a guided example of how to run an initial RRA. You will:
 
   - Ensure no previous RRA exist; if it does, just enhance the current RRA document
   - Create a copy of the RRA template in the RRA Google Drive directory.
-    - Mozilla employees can make a copy of the template with this [redirect](https://public.us-west-2.infosec.mozilla.org/web-tools/redirect-to-new-RRA-doc.html)
-    - Everyone can view the [RRA template](https://docs.google.com/document/d/1QMRdBLlQYqbn5lMmrOIBwS55Yh9fIYNp4dO3-HMyiyk/edit)
   - Invite 1 or 2 members (product/service owners, lead engineers, etc.) related
     to the service with a bit of technical knowledge.
   - Ensure the invitees attempt to bring a data flow diagram and have an understanding of the data the service stores or
@@ -210,7 +208,7 @@ examples:
 
 Set the data classification for each data type in the dictionary, such as "PUBLIC", "STAFF CONFIDENTIAL", etc. by using
 the "RRA Utilities" menu.
-Mozilla uses [standard classification levels](https://wiki.mozilla.org/Security/Data_Classification).
+As an example, Mozilla uses [standard classification levels](https://wiki.mozilla.org/Security/Data_Classification).
 
 When you figure out what the bulk or the most important data is, set this as the "Service Data Classification" in the
 RRA metadata.
@@ -278,8 +276,7 @@ up and this is a great time to have a quick 5 minute chat about these.
 - Does this service have an incident response plan defined?
 - Is the service using SSO for login?
 - Is there a web site that can be assessed? If so, you can file a vulnerability assessment request directly.
-- Did the service follow the security checklist and
-  [principles](/fundamentals/security_principles)?
+- Did the service follow the security checklists ?
 
 ### Wrapping up
 
@@ -300,13 +297,9 @@ up and this is a great time to have a quick 5 minute chat about these.
 - <https://binary.protect.io/workcard.pdf>
 - <https://en.wikipedia.org/wiki/ISO_31000>
 - <https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf>
+- <https://infosec.mozilla.org>
 
-## RRA Links
+## RRA Google Docs templates
 
-- [Current RRA requests](https://mzl.la/2c4a09F)
-- [New RRA
-  request](https://bugzilla.mozilla.org/enter_bug.cgi?product=Security+Assurance&component=Rapid%20Risk%20Analysis)
-- [New Vulnerability
-  Assessment](https://bugzilla.mozilla.org/enter_bug.cgi?product=Security+Assurance&component=Vulnerability%20Assessment)
-- [RRA Support code for the Google Docs template](https://github.com/mozilla/infosec.mozilla.org/blob/master/misc/RRACodeMaster.js)
-- [RRA Parsing code (convert to spreadsheet/db) for the Google Docs template](https://github.com/mozilla/infosec.mozilla.org/blob/master/misc/RRA2Spreadsheet.js)
+- [RRA Support code for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRACodeMaster.js)
+- [RRA Parsing code (convert to spreadsheet/db) for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRA2Spreadsheet.js)
