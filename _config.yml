@@ -18,7 +18,7 @@ title: Rapid Risk Assessment
 description: >- # this means to ignore newlines until "baseurl:"
         The Rapid Risk Assessment (RRA) framework.
 #baseurl: "/website" # the subpath of your site, e.g. /blog
-url: "https://rapidriskassessment.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.rra.rocks" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
