@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 # Rapid Risk Assessment (RRA)
