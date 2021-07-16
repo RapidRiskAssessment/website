@@ -10,7 +10,13 @@ This means the RRA is more likely to result into important risks being surfaced 
 
 # Participate
 
-This website, reference and tools are all hosted under the [MPL](LICENSE) on https://github.com/rapidriskassessment.
+This website, reference and tools are all hosted under the [MPL](LICENSE) on [](https://github.com/rapidriskassessment).
+
+# Podcast, videos, talks, etc.
+
+- [https://www.youtube.com/watch?v=_fje_HX6dXI](2020 English Podcast by Abhay Bhargav with Julien Vehent and Simon Bennetts)
+- [https://www.youtube.com/watch?v=HrxuBqFOQuU](2021 English introduction to RRA by Julien Vehent)
+- [https://www.nolimitsecu.fr/rapid-risk-assessment/](2021 French Podcast by NoLimitSecu, Julien Vehent and Guillaume Destuynder)
 
 
 # Origins
