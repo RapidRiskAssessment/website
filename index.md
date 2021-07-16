@@ -10,7 +10,7 @@ This means the RRA is more likely to result into important risks being surfaced 
 
 # Participate
 
-This website, reference and tools are all hosted under the [MPL](LICENSE) on [](https://github.com/rapidriskassessment).
+This website, reference and tools are all hosted under the [MPL](LICENSE) on [https://github.com/rapidriskassessment](https://github.com/rapidriskassessment).
 
 # Podcast, videos, talks, etc.
 
