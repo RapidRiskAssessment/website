@@ -47,9 +47,11 @@ plugins:
 navbar-links:
         Home: "index"
         Risk TL;DR: "assessing_security_risk"
-        Rapid Risk Assessment:
-          - RRA Reference: "rapid_risk_assessment"
+        Reference:
+          - RRA for Services: "rapid_risk_assessment"
           - Fundamental Concepts: "concepts"
           - Training: "training"
+        Integrations:
+          - Google Docs: "gdocs"
 social-network-links:
         github: rapiddiskassessment
