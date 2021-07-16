@@ -8,17 +8,11 @@ The Rapid Risk Assessment framework is licensed under the [MPL](LICENSE) and was
 
 This means the RRA is more likely to result into important risks being surfaced and mitigated, rather and obscured and forgotten despite "security telling you to fix all the things".
 
+# Participate
 
-## Rapid Risk Assessment reference guide
-
-The [original reference guide](rapid_risk_assessment.md) to running an RRA.
-
-
-## New to risk analysis?
-
-Some [theory behind risk](assessing_security_risk.md) analysis.
+This website, reference and tools are all hosted under the [MPL](LICENSE) on https://github.com/rapidriskassessment.
 
 
 # Origins
 
-The RRA concept was originally created at Mozilla under the [MPL](LICENSE) by gdestuynder@ and jvehent@ (after a walk on the beach). Mozilla's Information security website can be found at [https://infosec.mozilla.org](https://infosec.mozilla.org).
+The RRA concept was originally created at Mozilla under the [MPL](LICENSE) by [gdestuynder@](https://github.com/gdestuynder) and [jvehent@](https://github.com/jvehent) (after a walk on the beach) and improved with contributions from Mozilla's Information Security team. Mozilla's Information security website can be found at [https://infosec.mozilla.org](https://infosec.mozilla.org). See also [AUTHORS](AUTHORS.md) for a list of contributors.
