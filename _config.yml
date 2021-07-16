@@ -46,7 +46,7 @@ plugins:
 # Beautiful Jekyll
 navbar-links:
         Home: "index"
-        Understand Risk: "riskprimer"
+        Risk TL;DR: "assessing_security_risk"
         Rapid Risk Assessment:
           - RRA Reference: "rapid_risk_assessment"
           - Fundamental Concepts: "concepts"
