@@ -47,7 +47,7 @@ plugins:
 navbar-links:
         Home: "index"
         Risk TL;DR: "assessing_security_risk"
-        Reference:
+        Reference Documentation:
           - RRA for Services: "rapid_risk_assessment"
           - Standard Levels: "standard_levels"
           - Data classification: "data_classification"
