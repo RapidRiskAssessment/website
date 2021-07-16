@@ -30,4 +30,4 @@ This website, reference and tools are all hosted under the [MPL](LICENSE) on [ht
 
 # Origins
 
-The RRA concept was originally created at Mozilla under the [MPL](LICENSE) by [gdestuynder@](https://github.com/gdestuynder) and [jvehent@](https://github.com/jvehent) (after a walk on the beach) and improved with contributions from Mozilla's Information Security team. See [LICENSE](LICENSE.md) for licensing details. Mozilla's Information security website can be found at [https://infosec.mozilla.org](https://infosec.mozilla.org). See also [CONTRIBUTORS](CONTRIBUTORS.md) for a list of contributors.
+The RRA concept was originally created at Mozilla under the [MPL](LICENSE-MPL) by [gdestuynder@](https://github.com/gdestuynder) and [jvehent@](https://github.com/jvehent) (after a walk on the beach) and improved with contributions from Mozilla's Information Security team. See [LICENSE](LICENSE) for licensing details. Mozilla's Information security website can be found at [https://infosec.mozilla.org](https://infosec.mozilla.org). See also [CONTRIBUTORS](CONTRIBUTORS) for a list of contributors.
