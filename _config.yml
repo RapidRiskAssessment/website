@@ -25,9 +25,11 @@ github_username:
 
 # Build settings
 markdown: kramdown
-theme: beautiful-jekyll-theme
+#theme: beautiful-jekyll-theme
+remote_theme: daattali/beautiful-jekyll@5.0.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,7 +45,7 @@ plugins:
 
 # Beautiful Jekyll
 navbar-links:
-        Index: "index"
+        Home: "index"
         Understand Risk: "riskprimer"
         Rapid Risk Assessment:
           - RRA Reference: "rapid_risk_assessment"
