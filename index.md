@@ -8,6 +8,15 @@ The Rapid Risk Assessment framework is licensed under the [MPL](LICENSE) and was
 
 This means the RRA is more likely to result into important risks being surfaced and mitigated, rather and obscured and forgotten despite "security telling you to fix all the things".
 
+# Get started!
+
+1. Even if you're a seasoned risk professional, our [Risk TL;DR](assessing_security_risk.md) may pick your interest. This is a quick introdution to risk assessments in general.
+2. Check our the Podcasts, videos, etc. below !
+3. Read the Reference Documentation (see top menus), especially [RRA for services](rapid_risk_assessment.md)
+4. Play with integrations, such as the Google Docs templates.
+
+Eventually, we might add a real training documentation or video to get you started and train your friends and colleagues.
+
 # Participate
 
 This website, reference and tools are all hosted under the [MPL](LICENSE) on [https://github.com/rapidriskassessment](https://github.com/rapidriskassessment).
