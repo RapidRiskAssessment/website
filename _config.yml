@@ -53,5 +53,6 @@ navbar-links:
           - Training: "training"
         Integrations:
           - Google Docs: "gdocs"
+          - Visualization: "visualisation"
 social-network-links:
         github: rapiddiskassessment
