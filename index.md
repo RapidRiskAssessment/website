@@ -21,4 +21,4 @@ Some [theory behind risk](assessing_security_risk.md) analysis.
 
 # Origins
 
-The RRA concept was originally created at Mozilla under the [MPL](LICENSE) by gdestuynder@ and jvehent@ (after a walk on the beach). Mozilla's Information security website can be found at https://infosec.mozilla.org.
+The RRA concept was originally created at Mozilla under the [MPL](LICENSE) by gdestuynder@ and jvehent@ (after a walk on the beach). Mozilla's Information security website can be found at [https://infosec.mozilla.org](https://infosec.mozilla.org).
