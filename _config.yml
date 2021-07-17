@@ -58,3 +58,5 @@ navbar-links:
           - Visualization: "visualisation"
 social-network-links:
         github: rapidriskassessment
+site-css:
+  - "assets/css/risk.css"

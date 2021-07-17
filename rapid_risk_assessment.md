@@ -1,7 +1,5 @@
 ---
 layout: default
-resource: true
-categories: [Guidelines,Risk]
 title: Rapid Risk Assessment (RRA)
 description: A rapid methodology to perform risk analysis and create a lightweight threat model.
 ---
@@ -232,21 +230,21 @@ Record all results and **make sure that you set an impact level** (use the "RRA 
 For each, run through these questions and assign an impact level if appropriate:
 
   - Reputation issues
-    - Do we get in mainstream news? (<span class="risk-maximum">MAXIMUM impact</span>)
-    - Do we get in the technical news? (<span class="risk-high">HIGH impact</span>)
-    - Do we receive emails, bugs, twitter messages, etc? (<span class="risk-medium">MEDIUM impact</span>)
-    - Not much? (<span class="risk-low">LOW impact</span>)
+    - Do we get in mainstream news? (<span class="risk risk-maximum">MAXIMUM impact</span>)
+    - Do we get in the technical news? (<span class="risk risk-high">HIGH impact</span>)
+    - Do we receive emails, bugs, twitter messages, etc? (<span class="risk risk-medium">MEDIUM impact</span>)
+    - Not much? (<span class="risk risk-low">LOW impact</span>)
   - Productivity issues
     - Are small teams occupied on dealing with the issue for
-      - Less than 24h? (<span class="risk-low">LOW impact</span>)
-      - Less than 2 days? (<span class="risk-medium">MEDIUM impact</span>)
-      - Less than a week? (<span class="risk-high">HIGH impact</span>)
-      - More? (<span class="risk-maximum">MAXIMUM impact</span>)
+      - Less than 24h? (<span class="risk risk-low">LOW impact</span>)
+      - Less than 2 days? (<span class="risk risk-medium">MEDIUM impact</span>)
+      - Less than a week? (<span class="risk risk-high">HIGH impact</span>)
+      - More? (<span class="risk risk-maximum">MAXIMUM impact</span>)
     - How about large teams, or the entire company, or our user-base?
-      - Less than 2h? (<span class="risk-low">LOW impact</span>)
-      - Less than 24h? (<span class="risk-medium">MEDIUM impact</span>)
-      - Less than 2 days? (<span class="risk-high">HIGH impact</span>)
-      - More? (<span class="risk-maximum">MAXIMUM impact</span>)
+      - Less than 2h? (<span class="risk risk-low">LOW impact</span>)
+      - Less than 24h? (<span class="risk risk-medium">MEDIUM impact</span>)
+      - Less than 2 days? (<span class="risk risk-high">HIGH impact</span>)
+      - More? (<span class="risk risk-maximum">MAXIMUM impact</span>)
   - Financial issues?
     - Would it cost money? How much?
 
