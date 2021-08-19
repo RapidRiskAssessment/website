@@ -1,3 +1,9 @@
+---
+layout: default
+title: Primer
+description: An explanation of why the RRA works the way it works
+---
+
 # Why does it work?
 
 This document summarizes the concepts, requirements and technical details behind the Rapid Risk Assessment (RRA). We call the way the RRA works a threat Scenario based risk assessment.
