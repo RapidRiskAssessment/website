@@ -115,7 +115,7 @@ NOTE: The use of **+** and **-** modifiers in front of scores (e.g. "A+") is all
 <table>
 <thead>
 <tr class="header">
-<th><p>Level</p></th>
+<th><p>Score</p></th>
 <th><p>Expectations</p></th>
 </tr>
 </thead>
@@ -124,16 +124,19 @@ NOTE: The use of **+** and **-** modifiers in front of scores (e.g. "A+") is all
 <td><p><span class="risk score-green">A+, A, A-</span></p></td>
 <td><p><em>Highest possible grade</em>.</p>
 <ul>
-<li>Support all features and controls.</li>
-<li>All intentions of objective met.</li>
+  <li>Support all known features, processes, mitigations, controls.</li>
+  <li>All intentions of objective met.</li>
+  <li>Well maintained, well defined, well measured.</li>
+  <li>No recommendations or backlogged work items.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><span class="risk score-blue">B+, B, B-</span></p></td>
 <td><ul>
-<li>Supports most important features and controls.</li>
-<li>Some outliers need attention.</li>
-<li>Most intentions of objective met.</li>
+  <li>Supports most important features, processes, mitigations and controls.</li>
+  <li>Some outliers need attention.</li>
+  <li>Most intentions of objective met.</li>
+  <li>There may be some <span class="risk risk-low">LOW</span>, <span class="risk risk-medium">MEDIUM</span> recommendations that have not yet been followed.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -141,18 +144,21 @@ NOTE: The use of **+** and **-** modifiers in front of scores (e.g. "A+") is all
 <p><span class="risk score-yellow">D+, D, D-</span></p></td>
 <td><p><em>Score may moderately contribute to risk</em>.</p>
 <ul>
-<li>Potential service blocker.</li>
-<li>Needs attention and features need to be enabled/controls added.</li>
-<li>Minimal to moderate intentions of objective met.</li>
+  <li>Potential service blocker.</li>
+  <li>Needs attention and features need to be enabled/controls added.</li>
+  <li>Minimal to moderate intentions of objective met.</li>
+  <li>There may be some <span class="risk risk-low">LOW</span>, <span class="risk risk-medium">MEDIUM</span>, sometimes <span class="risk risk-high">HIGH</span> recommendations that have not yet been followed.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><span class="risk score-red">F</span></p></td>
 <td><p><em>Lowest possible grade, score may greatly contribute to risk</em>.</p>
 <ul>
-<li>Zero to minimal intentions of objective met.</li>
-<li>Immediate attention and action are required.</li>
-<li>Score likely to block the service.</li>
+  <li>Zero to minimal intentions of objective met.</li>
+  <li>Immediate attention and action are required.</li>
+  <li>Score likely to block the service.</li>
+  <li>There may be many recommendations that have not yet been followed, including <span class="risk risk-maximum">MAXIMUM</span> recommendations.</li>
+  <li>May relate to a great amount of risk.</li>
 </ul></td>
 </tr>
 <tr class="odd">
