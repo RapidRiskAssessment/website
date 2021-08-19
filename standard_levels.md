@@ -106,6 +106,7 @@ The scores are used to score security preventive or detection controls.
 
 The following scores are intended to provide a grade for a particular objective. The scoes map back to the standard risk level definitions so that automatic risk mapping can be performed if necessary.
 Scores are useful to grade security controls, hardware qualitues, implementation, etc. 
+
 These scoring levels are used, for example, on the [https://observatory.mozilla.org](Mozilla Observatory).
 
 NOTE: The use of **+** and **-** modifiers in front of scores (e.g. "A+") is allowed if necessary. These are added to represent going slightly above or below expectations.
