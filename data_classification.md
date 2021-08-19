@@ -54,3 +54,33 @@ Alternatively, it is also useful to directly label data in databases, automatica
 </tr>
 </tbody>
 </table>
+
+# Examples
+
+<p><span class="risk risk-low">PUBLIC</span></p>
+<ul>
+  <li>Open source code.</li>
+  <li>Test-only credentials.</li>
+  <li>Public websites.</li>
+</ul>
+
+<p><span class="risk score-blue">INTERNAL CONFIDENTIAL</span></p>
+<ul>
+  <li>Internal meetings.</li>
+  <li>Team members information.</li>
+  <li>Agreggated survey data.</li>
+</ul>
+
+<p><span class="risk score-yellow">SPECIFIC WORKGROUPS ONLY</span></p>
+<ul>
+  <li>SSN, addresses, staff performance data.</li>
+  <li>Service credentials.</li>
+  <li>Contracts, legal documents.</li>
+</ul>
+
+<p><span class="risk score-red">SPECIFIC INDIVIDUALS ONLY</span></p>
+<ul>
+  <li>Security incidents.</li>
+  <li>Attorney privileged conversations.</li>
+  <li>User data.</li>
+</ul>
