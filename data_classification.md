@@ -7,6 +7,7 @@ description: A standard data classification which can be customized
 # Data Classification
 
 A data classification allows for rapidly triaging data types and understand their sensitivity and intended audience. It is recommended to use these classification labels when creating new documents, sending emails, etc. as necessary.
+
 Alternatively, it is also useful to directly label data in databases, automatically. This speeds up risk analysis as one can then query which classes of data are involved with their analysis.
 
 <table>
@@ -34,7 +35,7 @@ Alternatively, it is also useful to directly label data in databases, automatica
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span class="risk score-yellow">SPECIFIC WORKGROUPS ONLY</span></p>
+<td><p><span class="risk score-yellow">SPECIFIC WORKGROUPS ONLY</span></p></td>
 <td>
 <ul>
 <li>Data that can be shared with a specific group of people, such as a specific team.</li>
@@ -50,37 +51,29 @@ Alternatively, it is also useful to directly label data in databases, automatica
 <li>This information, if disclosed beyond the individuals, would have a significant negative effect on the organization or its users.</li>
 </ul></td>
 </tr>
-<tr class="odd">
-</tr>
 </tbody>
 </table>
+
 
 # Examples
 
 <p><span class="risk risk-low">PUBLIC</span></p>
-<ul>
-  <li>Open source code.</li>
-  <li>Test-only credentials.</li>
-  <li>Public websites.</li>
-</ul>
+- Open source code.
+- Test-only credentials.
+- Public websites.
 
 <p><span class="risk score-blue">INTERNAL CONFIDENTIAL</span></p>
-<ul>
-  <li>Internal meetings.</li>
-  <li>Team members information.</li>
-  <li>Agreggated survey data.</li>
-</ul>
+- Internal meetings.
+- Team members information.
+- Agreggated survey data.
+
 
 <p><span class="risk score-yellow">SPECIFIC WORKGROUPS ONLY</span></p>
-<ul>
-  <li>SSN, addresses, staff performance data.</li>
-  <li>Service credentials.</li>
-  <li>Contracts, legal documents.</li>
-</ul>
+- SSN, addresses, staff performance data.
+- Service credentials.
+- Contracts, legal documents.
 
 <p><span class="risk score-red">SPECIFIC INDIVIDUALS ONLY</span></p>
-<ul>
-  <li>Security incidents.</li>
-  <li>Attorney privileged conversations.</li>
-  <li>User data.</li>
-</ul>
+- Security incidents.
+- Attorney privileged conversations.
+- User data.
