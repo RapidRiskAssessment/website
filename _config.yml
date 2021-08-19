@@ -51,7 +51,7 @@ navbar-links:
           - RRA for Services: "rapid_risk_assessment"
           - Standard Levels: "standard_levels"
           - Data classification: "data_classification"
-          - Why does it work: "fundamentals"
+          - Why does it work: "primer"
           - Training: "training"
         Integrations:
           - Google Docs: "gdocs"
