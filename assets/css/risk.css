@@ -11,7 +11,7 @@
     font-size: 0.8em;
 }
 
-.scored-red, .risk-maximum {
+.score-red, .risk-maximum {
     background-color: #d04437;
     color: #ffffff;
 }
