@@ -58,7 +58,7 @@ striking the right balance is paramount when hundred of services and vendors are
 Despite it's name, the RRA mainly focuses on assessing risk impact and only partially covers risk likelihood (such as by
 recording the frequency at which bad impacts occurred in the past, if any).
 
-- [RRA: Rapid Risk Assessment manual](risk/rapid_risk_assessment)
+- [RRA: Rapid Risk Assessment manual](rapid_risk_assessment)
 
 ## Likelihood indicators
 
@@ -67,7 +67,7 @@ Different scanners, such as the [Mozilla Observatory](https://observatory.mozill
 bug metrics, etc. emit short and lightweight JSON documents that contain an indicator of how likely an event or finding
 is to contribute to the likelihood for a service to be attacked successfully.
 
-- How to use, generate and understand [likelihood indicators](risk/likelihood_indicators)
+- How to use, generate and understand [likelihood indicators](likelihood_indicators)
 
 ## Service mapper
 
@@ -88,8 +88,8 @@ because there are several different methods that all use similar wording and dif
 Our levels are simple and well defined (at least, according to us!). They can be used in multiple ways, to assess
 criticality, risk, urgency, work-effort, etc. in a completely standardized way.
 
-- [Standard levels reference](risk/standard_levels)
-- [Scoring and other levels](risk/scoring_and_other_levels)
+- [Standard levels reference](standard_levels)
+- [Scoring and other levels](scoring_and_other_levels)
 
 
 # Reference documents
