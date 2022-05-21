@@ -108,7 +108,7 @@ And so on.
 
 
 
-See the RRA [Standard Levels](standard_levels.md) for an example.
+See the RRA [Standard Levels](standard_levels) for an example.
 
 ## Control scoring
 TBD.

@@ -78,7 +78,7 @@ The amount of indicators and the scenarios output allow machines and humans to q
 if a service or asset risk is increasing or decreasing over time. Alerts can also be generated for incident response
 teams based on that data, for example.
 
-See also:[Service Mapper](https://github.com/mozilla/service-map) ([mirror](https://github.com/rapidriskassessment/service-map)).
+See also: [Service Mapper](https://github.com/mozilla/service-map) ([mirror](https://github.com/rapidriskassessment/service-map)).
 
 ## Standard Levels
 

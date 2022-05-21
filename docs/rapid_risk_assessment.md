@@ -9,7 +9,7 @@ We all regularly use a risk based methodology when making decisions in day to da
 Rapid Risk Assessment or Rapid Risk Analysis (RRA) methodology helps formalize this type of decision making and ensures
 that the process is reproducible, consistent and the results are easy to communicate.
 
-See also [Assessing Security Risk](assessing_security_risk.md) for an introduction to risk and our processes related to
+See also [Assessing Security Risk](assessing_security_risk) for an introduction to risk and our processes related to
 risk.
 
 # Rapid Risk Assessment

@@ -28,7 +28,7 @@ It surface and mitigate important risks that matter to the team, rather than che
 
 1. Even if you're a seasoned risk professional, our [Risk TL;DR](docs/assessing_security_risk) may pick your interest.
 2. Check out the [Podcasts, videos, etc.](docs/podcasts) to get a feel for it!
-3. Read the [Reference Documentation](docs/index), especially [RRA for services](docs/rapid_risk_assessment.md)
+3. Read the [Reference Documentation](docs/index), especially [RRA for services](docs/rapid_risk_assessment)
 4. Play with [integrations](docs/integrations)
 
 # Origins
