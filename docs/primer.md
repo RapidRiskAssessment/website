@@ -39,7 +39,7 @@ Because this does not scale well for fast-paced development, and because the ris
 
 The Rapid Risk Assessment was created through several iterations (~6 years) and tests, practicing it in real company and community environments at [Mozilla](https://www.mozilla.org) by security engineers who had previously practiced standard risk analysis for computer systems and industrial systems. It aims to provide "80% good" risk assessments in less than an hour and can be seen as a risk socialization tool for non-specialists.
 
-The resulting process is licensed under the [MPL](LICENSE-MPL).
+The resulting process is licensed under the [MPL](/LICENSE).
 
 ## Lessons learned
 

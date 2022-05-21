@@ -87,9 +87,7 @@ In order to efficiently communicate how important the risk is, we standardized t
 Our levels are simple and well defined (at least, according to us!) using a hybrid qualitative and quantitative approach. These can be used in multiple ways, to assess
 criticality, risk, urgency, work-effort, etc. in a completely standardized way.
 
-See also:
-- [Standard levels reference](standard_levels)
-- [Scoring and other levels](scoring_and_other_levels)
+See also: [Standard Levels reference](standard_levels)
 
 
 # External reference documents
