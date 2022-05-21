@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rapid Risk Assessment
+title: RRA
 #email: no-reply@rra.rocks
 description: >- # this means to ignore newlines until "baseurl:"
         The Rapid Risk Assessment (RRA) framework.
@@ -27,6 +27,7 @@ github_username:
 markdown: kramdown
 #theme: beautiful-jekyll-theme
 remote_theme: daattali/beautiful-jekyll@5.0.0
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -60,3 +61,4 @@ social-network-links:
         github: rapidriskassessment
 site-css:
   - "assets/css/risk.css"
+  - "assets/css/site.css"
