@@ -10,7 +10,7 @@ This means the RRA is more likely to result into important risks being surfaced 
 
 # Get started!
 
-1. Even if you're a seasoned risk professional, our [Risk TL;DR](assessing_security_risk.md) may pick your interest. This is a quick introdution to risk assessments in general.
+1. Even if you're a seasoned risk professional, our [Risk TL;DR](assessing_security_risk.md) may pick your interest. This is a quick and broad introduction to risk assessments.
 2. Check our the Podcasts, videos, etc. below !
 3. Read the Reference Documentation (see top menus), especially [RRA for services](rapid_risk_assessment.md)
 4. Play with integrations, such as the Google Docs templates.
