@@ -5,8 +5,6 @@ sidebar:
   nav: "docs"
 ---
 
-# Data Classification
-
 A data classification allows for rapidly triaging data types and understand their sensitivity and intended audience. It is recommended to use these classification labels when creating new documents, sending emails, etc. as necessary.
 
 Alternatively, it is also useful to directly label data in databases, automatically. This speeds up risk analysis as one can then query which classes of data are involved with their analysis.
