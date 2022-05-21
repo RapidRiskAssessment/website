@@ -14,4 +14,4 @@ Open them directly in the project's issues.
 - Checkout this repository.
 - Run `bundle install` to install all dependencies.
 - Run `bundle exec jekyll serve --livereload` to locally serve contents for testing.
-- Run `bundle exec htmlproofer ./_site` to test for broken links.
+- Run `bundle exec htmlproofer --assume-extension ./_site` to test for broken links.
