@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Primer
+title: Why does it work?
 description: An explanation of why the RRA works the way it works
+sidebar:
+  nav: "docs"
 ---
 
 <!--
@@ -16,8 +17,6 @@ description: An explanation of why the RRA works the way it works
 - Impact: Qualify it
 - Likelihood: Quantify it
 -->
-
-# Why does it work?
 
 This document summarizes the fundamental concepts, requirements and technical details behind the Rapid Risk Assessment (RRA). We call the way the RRA works a "Threat Scenario based risk assessment".
 Through this document, we will discuss why we believe this model works well.
@@ -97,7 +96,7 @@ The RRA instead embraces the idea that pure risk quantification is usually impos
 
 ## Levels and bucketing by range
 
-However, in pratice, we generally observe that either analysis tend to produce results that require additional context for a decision maker to really understand the risk. Rather than forcing analysts to find numbers (which may be really incorrect), or guesstimate according to their internal knowledge, the RRA embrace the fact that numbers will not be exactly accurate, and not always measurable.
+However, in practice, we generally observe that either analysis tend to produce results that require additional context for a decision maker to really understand the risk. Rather than forcing analysts to find numbers (which may be really incorrect), or guesstimate according to their internal knowledge, the RRA embrace the fact that numbers will not be exactly accurate, and not always measurable.
 
 The RRA standard levels effectively bucket risk (low, medium, high, maximum) according to ranges ("spectrum") by impact categories:
 

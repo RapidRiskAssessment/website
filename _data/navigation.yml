@@ -1,0 +1,20 @@
+# main links
+main:
+  - title: "Risk TL;DR"
+    url: "docs/assessing_security_risk"
+  - title: "Reference Documentation"
+    url: "docs/index"
+  - title: "Why does it work?"
+    url: "docs/primer"
+
+docs:
+  - title: "Risk TL;DR"
+    url: "docs/assessing_security_risk"
+  - title: "RRA For Services"
+    url: "docs/rapid_risk_assessment"
+  - title: "Standard Levels"
+    url: "docs/standard_levels"
+  - title: "Data Classification"
+    url: "docs/data_classification"
+  - title: "Integrations"
+    url: "docs/integrations"

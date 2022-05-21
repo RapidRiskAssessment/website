@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Rapid Risk Assessment (RRA)
 description: A rapid methodology to perform risk analysis and create a lightweight threat model.
+sidebar:
+  nav: "docs"
 ---
 
 We all regularly use a risk based methodology when making decisions in day to day life, without thinking about it. The
