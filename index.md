@@ -11,13 +11,13 @@ feature_row:
     title: "Podcasts & Talks"
     excerpt: "Listen, watch videos and experiences with the RRA and how it's used!"
     url: "docs/podcasts"
-    btn_label: "Listen in!"
+    btn_label: "Listen in"
     btn_class: "btn--inverse"
   - image_path: "/assets/img/f3.jpg"
     title: "Standard Levels"
     excerpt: "The reference levels for risk, scores, to use with your  assessments."
     url: "docs/standard_levels"
-    btn_label: "Show Me!"
+    btn_label: "Show Me"
     btn_class: "btn--inverse"
 ---
 
