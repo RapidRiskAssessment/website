@@ -3,13 +3,22 @@ layout: splash
 feature_row:
   - image_path: "/assets/img/f1.jpg"
     title: "Risk: TL;DR"
-    excerpt: "Start with the [Risk TL;DR](docs/assessing_security_risk). A quick, broad introduction to risk assessments."
+    excerpt: "Start with the Risk TL;DR. A quick, broad introduction to risk assessments."
+    url: "docs/assessing_security_risk"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
   - image_path: "/assets/img/f2.jpg"
     title: "Podcasts & Talks"
-    excerpt: "[Listen to experiences](docs/podcasts) with the RRA and how it's used!"
+    excerpt: "Listen, watch videos and experiences with the RRA and how it's used!"
+    url: "docs/podcasts"
+    btn_label: "Listen in!"
+    btn_class: "btn--inverse"
   - image_path: "/assets/img/f3.jpg"
     title: "Standard Levels"
-    excerpt: "The [reference levels](docs/standard_levels) for your assessments."
+    excerpt: "The reference levels for risk, scores, to use with your  assessments."
+    url: "docs/standard_levels"
+    btn_label: "Show Me!"
+    btn_class: "btn--inverse"
 ---
 
 <p></p> <!-- quick fix until there is a splash image, if ever :) -->
