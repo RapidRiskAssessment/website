@@ -109,7 +109,8 @@ Scores are useful to grade security controls, hardware qualities, implementation
 
 These scoring levels are used, for example, on the [Mozilla Observatory](https://observatory.mozilla.org).
 
-NOTE: The use of **+** and **-** modifiers in front of scores (e.g. "A+") is allowed if necessary. These are added to represent going slightly above or below expectations.
+{: .notice--info}
+The use of **+** and **-** modifiers in front of scores (e.g. "A+") is allowed if necessary. These are added to represent going slightly above or below expectations.
 
 
 <table>
