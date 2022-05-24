@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rapid Risk Assessment
+title: RRA
 #email: no-reply@rra.rocks
 description: >- # this means to ignore newlines until "baseurl:"
-        The Rapid Risk Assessment (RRA) framework.
+        The Rapid Risk Assessment framework.
 root: /
 #baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://www.rra.rocks" # the base hostname & protocol for your site, e.g. http://example.com
@@ -26,10 +26,22 @@ github_username:
 # Build settings
 markdown: kramdown
 #theme: beautiful-jekyll-theme
-remote_theme: daattali/beautiful-jekyll@5.0.0
+#remote_theme: daattali/beautiful-jekyll@5.0.0
+remote_theme: mmistakes/minimal-mistakes
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-data
+
+defaults:
+  -
+    scope:
+      path: "" # as in * 
+    values:
+      layout: "single"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,20 +55,23 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# mmistakes
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Beautiful Jekyll
-navbar-links:
-        Home: "index"
-        Risk TL;DR: "assessing_security_risk"
-        Reference Documentation:
-          - RRA for Services: "rapid_risk_assessment"
-          - Standard Levels: "standard_levels"
-          - Data classification: "data_classification"
-          - Why does it work: "primer"
-          - Training: "training"
-        Integrations:
-          - Google Docs: "gdocs"
-          - Visualization: "visualisation"
+#navbar-links:
+#        Home: "index"
+#        Risk TL;DR: "assessing_security_risk"
+#        Reference Documentation:
+#          - RRA for Services: "rapid_risk_assessment"
+#          - Standard Levels: "standard_levels"
+#          - Data classification: "data_classification"
+#          - Why does it work: "primer"
+#          - Training: "training"
+#        Integrations:
+#          - Google Docs: "gdocs"
+#          - Visualization: "visualisation"
 social-network-links:
         github: rapidriskassessment
 site-css:
   - "assets/css/risk.css"
+#  - "assets/css/site.css"

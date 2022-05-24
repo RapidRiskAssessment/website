@@ -1,9 +1,9 @@
 ---
-layout: default
-resource: true
-categories: [Guidelines,Risk]
+layout: single
 title: Assessing Security Risk
 description: An open framework to assess security risk from an operational perspective
+sidebar:
+  nav: "docs"
 ---
 
 *The goal of these documents is to help you understand how a risk framework is utilized. It also
@@ -18,8 +18,8 @@ methodology, however, the concepts are well exposed in their documentation
 Risk is commonly defined as: `risk = impact * likelihood`
 
 Where:
- - Impact (also called risk impact) defines 'how bad' things can get, the worst-case scenario.
- - Likelihood defines the probable frequency, or rate at which the impacts we assessed may occur.
+ - **Impact** (also called risk impact) defines 'how bad' things can get, the worst-case scenario.
+ - **Likelihood** defines the probable frequency, or rate at which the impacts we assess may occur.
 
 ## Risk impact
 Assessing impact is a relatively finite, quantitative exercise. When imagining a threat scenario, attacks, etc. we can
@@ -49,50 +49,48 @@ In short, while more difficult, assessing likelihood with some degree of accurac
 ## RRA: Rapid Risk Assessment (risk impact analysis)
 
 We analyze and assess risk with a lightweight threat model we call the RRA (Rapid Risk Assessment). It consists of a
-30-60min discussion with involved parties that is service based.
+30-60min discussion with involved parties, and is service based.
 
-Each service is assessed from a high level perspective, and sometimes the threat model it extended and completed with
+Each service is assessed from a high level perspective, and sometimes the threat model is extended and completed with
 details, or shortened when not necessary.  The RRA allows us to right-size risk assessments quickly and efficiently -
 striking the right balance is paramount when hundred of services and vendors are used day to day.
 
 Despite it's name, the RRA mainly focuses on assessing risk impact and only partially covers risk likelihood (such as by
 recording the frequency at which bad impacts occurred in the past, if any).
 
-- [RRA: Rapid Risk Assessment manual](rapid_risk_assessment.md)
+See also: [RRA: Rapid Risk Assessment manual](rapid_risk_assessment)
 
 ## Likelihood indicators
 
-We utilize what we call likelihood indicators in order to assess the probably for an impact to occur.
+We utilize what we call _likelihood indicators_ in order to assess the probably for an impact to occur.
 Different scanners, such as the [Mozilla Observatory](https://observatory.mozilla.org), internal vulnerability scanners,
 bug metrics, etc. emit short and lightweight JSON documents that contain an indicator of how likely an event or finding
 is to contribute to the likelihood for a service to be attacked successfully.
 
-- How to use, generate and understand [likelihood indicators](likelihood_indicators.md)
+See also: How to use, generate and understand [likelihood indicators](likelihood_indicators)
 
-## Service mapper
+## Service mapper (risk register)
 
 The service mapper is an API that collects RRA and likelihood indicator data. It calculates various scenarios based on
-the `risk = impact * likelihood` formula, with some tweaks depending on the scenario being calculated.
+the `risk = impact * likelihood` formula, with tweaks, thresholds, etc. depending on the scenario being calculated.
 
 The amount of indicators and the scenarios output allow machines and humans to quickly interpret the data and figure out
 if a service or asset risk is increasing or decreasing over time. Alerts can also be generated for incident response
 teams based on that data, for example.
 
-- [Service Mapper](https://github.com/mozilla/service-map)
+See also: [Service Mapper](https://github.com/mozilla/service-map) ([mirror](https://github.com/rapidriskassessment/service-map)).
 
 ## Standard Levels
 
-In order to efficiently communicate how important the risk is, we standardized our own risk levels. This is mainly
-because there are several different methods that all use similar wording and different meaning, confusing everyone.
+In order to efficiently communicate how important the risk is, we standardized the risk levels (low, medium, high, maximum). This is primarily done to address the concern with the large amount of existing, different methods in use in the industry. These all use similar wording and with different meanings, accuracy, and assessment methods which are rarely defined. In other words, it ensures that the meaning of "high" or "low" is the same across your organization by clearly defining them.
 
-Our levels are simple and well defined (at least, according to us!). They can be used in multiple ways, to assess
+Our levels are simple and well defined (at least, according to us!) using a hybrid qualitative and quantitative approach. These can be used in multiple ways, to assess
 criticality, risk, urgency, work-effort, etc. in a completely standardized way.
 
-- [Standard levels reference](standard_levels.md)
-- [Scoring and other levels](scoring_and_other_levels.md)
+See also: [Standard Levels reference](standard_levels)
 
 
-# Reference documents
+# External reference documents
 
 - [Introduction to modern risk analysis](https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf)
 - [ISO 31000](https://www.iso.org/iso-31000-risk-management.html)

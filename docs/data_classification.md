@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Data Classification
 description: A standard data classification which can be customized
+sidebar:
+  nav: "docs"
 ---
-
-# Data Classification
 
 A data classification allows for rapidly triaging data types and understand their sensitivity and intended audience. It is recommended to use these classification labels when creating new documents, sending emails, etc. as necessary.
 
@@ -30,7 +29,7 @@ Alternatively, it is also useful to directly label data in databases, automatica
 <tr class="even">
 <td><p><span class="risk score-blue">INTERNAL CONFIDENTIAL</span></p></td>
 <td><ul>
-<li>Data that can be shared with internally with all teams within an oraganization/</li>
+<li>Data that can be shared with internally with all teams within an organization/</li>
 <li>This information is potentially sensitive and could have a negative impact if made public.</li>
 </ul></td>
 </tr>
@@ -65,7 +64,7 @@ Alternatively, it is also useful to directly label data in databases, automatica
 <p><span class="risk score-blue">INTERNAL CONFIDENTIAL</span></p>
 - Internal meetings.
 - Team members information.
-- Agreggated survey data.
+- Aggregated survey data.
 
 
 <p><span class="risk score-yellow">SPECIFIC WORKGROUPS ONLY</span></p>

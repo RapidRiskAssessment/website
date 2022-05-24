@@ -1,14 +1,15 @@
 ---
-layout: default
 title: Rapid Risk Assessment (RRA)
 description: A rapid methodology to perform risk analysis and create a lightweight threat model.
+sidebar:
+  nav: "docs"
 ---
 
 We all regularly use a risk based methodology when making decisions in day to day life, without thinking about it. The
 Rapid Risk Assessment or Rapid Risk Analysis (RRA) methodology helps formalize this type of decision making and ensures
 that the process is reproducible, consistent and the results are easy to communicate.
 
-See also [Assessing Security Risk](assessing_security_risk.md) for an introduction to risk and our processes related to
+See also [Assessing Security Risk](assessing_security_risk) for an introduction to risk and our processes related to
 risk.
 
 # Rapid Risk Assessment

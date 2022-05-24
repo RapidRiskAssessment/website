@@ -1,17 +1,17 @@
 ---
-layout: default
-title: Standard Levels
+title: Standard Risk Levels
 description: A standard risk level taxonomy which can be customized
+sidebar:
+  nav: "docs"
 ---
 
-# Standard Risk Levels
 The goal of this document is to ensure consistency, coherence between security documents which measure risk, impact or scores security controls.
-Each level is documented with the following infomation::
+Each level is documented with the following information:
 - Level color coding.
 - Name or name schemes.
 - Level expectations.
 - Examples of usage.
-- Timeframe for resolution.
+- Time frame for resolution.
 
 The risk levels are *qualitative* risk buckets, with clearly defined *quantitative* ranges where applicable. They are generally used to display risk, risk impact, risk probability, or importance.
 The scores are used to score security preventive or detection controls.
@@ -36,7 +36,7 @@ The scores are used to score security preventive or detection controls.
 <li><strong>Attention</strong>: Full attention from all concerned parties required.</li>
 <li><strong>Impact</strong>: High or maximum impact.</li>
 <li><strong>Effort</strong>: All resources engaged on fixing issues. Following standard/guidelines is required.</li>
-<li><strong>Risk acceptance</strong>: Rarely accepted as residual risk, must be discussed, and must be mitigated or remediated.</li>
+<li><strong>Risk acceptance</strong>: Rarely accepted as residual risk, must be discussed, and must be mitigated or fixed.</li>
 <li><strong>Exception time (SLA)</strong>: Recommend fixing <strong>immediately</strong>.</li>
 </ul></td>
 <td><ul>
@@ -104,8 +104,8 @@ The scores are used to score security preventive or detection controls.
 
 # Scoring
 
-The following scores are intended to provide a grade for a particular objective. The scoes map back to the standard risk level definitions so that automatic risk mapping can be performed if necessary.
-Scores are useful to grade security controls, hardware qualitues, implementation, etc. 
+The following scores are intended to provide a grade for a particular objective. The scores map back to the standard risk level definitions so that automatic risk mapping can be performed if necessary.
+Scores are useful to grade security controls, hardware qualities, implementation, etc. 
 
 These scoring levels are used, for example, on the [Mozilla Observatory](https://observatory.mozilla.org).
 
