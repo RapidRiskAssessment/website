@@ -31,14 +31,14 @@ The Rapid Risk Assessment framework is licensed under the [MPL](LICENSE) and was
 
 The RRA is based on previous frameworks, but focuses on the social aspect of the risk discussions in order to favor good outcomes, rather than perfect outcomes.
 
-It surface and mitigate important risks that matter to the team, rather than check lists of controls.
+It surfaces and mitigates important risks that matter to the team, rather than checking lists of controls.
 
 # Get started!
 
-1. Even if you're a seasoned risk professional, our [Risk TL;DR](docs/assessing_security_risk) may pick your interest.
+1. Even if you're a seasoned risk professional, our [Risk TL;DR](docs/assessing_security_risk) may pique your interest.
 2. Check out the [Podcasts, videos, etc.](docs/podcasts) to get a feel for it!
-3. Read the [Reference Documentation](docs/index), especially [RRA for services](docs/rapid_risk_assessment)
-4. Play with [integrations](docs/integrations)
+3. Read the [Reference Documentation](docs/index), especially [RRA for services](docs/rapid_risk_assessment).
+4. Play with [integrations](docs/integrations).
 
 # Origins
 
