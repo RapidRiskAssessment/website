@@ -3,6 +3,8 @@ title: Why does it work?
 description: An explanation of why the RRA works the way it works
 sidebar:
   nav: "docs"
+toc: true
+toc_sticky: true
 ---
 
 <!--
@@ -18,14 +20,23 @@ sidebar:
 - Likelihood: Quantify it
 -->
 
-This document summarizes the fundamental concepts, requirements and technical details behind the Rapid Risk Assessment (RRA). We call the way the RRA works a "Threat Scenario based risk assessment".
+![robot-arm](/assets/img/arm.png){: .align-left}
+This document summarizes the fundamental concepts, requirements and technical details behind the Rapid Risk Assessment (RRA).
+
+We call the way the RRA works a "Threat Scenario based risk assessment".
+
 Through this document, we will discuss why we believe this model works well.
+
+![]()
 
 # History
 
 Risk assessments are based on threat models, which attempt to view a system, service, etc. as an attacker in order to ensure the right controls (or mitigations) are implemented in order to reduce risk. To some degree, the assessments attempt to *predict* bad outcomes. This can be very difficult to get right.
 
-To standardize the assessments, [ISO 31000](https://infogalactic.com/info/ISO_31000) was created in 2009 (for context, a previous effort such as the French [EBIOS](https://infogalactic.com/info/EBIOS) was created in 1995). Frameworks based on ISO 3100 tend to aim for correctness and require strict, extensive data collection before the analysis can be performed. The analysis itself is also extensive. It is typical for a full analysis to take weeks or even years (!).
+![pile-of-paper](/assets/img/pile.jpg){: .align-right}
+To standardize the assessments, [ISO 31000](https://infogalactic.com/info/ISO_31000) was created in 2009 (for context, a previous effort such as the French [EBIOS](https://infogalactic.com/info/EBIOS) was created in 1995).
+
+Frameworks based on ISO 3100 tend to aim for correctness and require strict, extensive data collection before the analysis can be performed. The analysis itself is also extensive. It is typical for a full analysis to take weeks or even years (!).
 
 Because this does not scale well for fast-paced development, and because the risk may have been realized in practice before the analysis is completed, several variations are usually implemented by software development companies and government bodies, for example:
 
@@ -45,13 +56,13 @@ The resulting process is licensed under the [MPL](/LICENSE).
 
 *This a TL;DR of what we learned along the years.*
 
-Positive learnings:
+**Positive learnings**:
 - Engineers value the direct help of security (and other) specialists as they aim to create good software, systems, services, processes that they can be proud of.
 - Humans are good at estimating ("qualifying") the probable worse case loss scenarios, i.e. impact when something goes wrong.
 - The process *must* directly provide value the creators and owners of the software, systems, services, etc. rather than security engineers or compliance teams.
 - The ratio of value to time spent rapidly diminushes after the first 30 minutes (!)
 
-Negative learnings:
+**Negative learnings**:
 - Excessive specialized language is rarely called out and is a diservice to the process as it leads to misunderstandings (Threat actor, target of evaluation, etc.).
 - Humans often confuse risk, likelihood and impact, including security specialists. Yup.
 - Humans are bad at estimating probability.
@@ -76,39 +87,41 @@ We can then make the hypothesis that humans will be better at assessing large pr
 
 By contrast, machines will be better at parsing all vulnerability data, coverage, event data, etc. and assess the probability of an existing, <u>human-defined</u> Threat Scenario to occur. Machines are also good at *ranking* Threat Scenarios and control lists, of course.
 
+{: .notice--info}
 TL;DR: As a result, the Threat Scenario based risk assessment focuses on impact assessment for humans, and heavily emphasizes on the quality and accuracy of that impact assessment.
 
 
 # Fundamentals
-This section describes the fundamental concepts utilized by the RRA. These concepts can be used as **building blocks** for various types of risk assessments while retaining the value of the RRA.
+This section describes the fundamental concepts utilized by the RRA. These concepts can be used as **building blocks** for various types of risk assessments while retaining the value of the RRA. The main implementation of the RRA is [RRA for Services](rapid_risk_assessment)
 
 ## Standard Levels
 
-Risk is generally estimated according to different scales, such as "low, medium, high" or "0 to 100, 0.0 to 1.0". However, how these levels are set are very different from person to person depending on their background, experience, risk appetite and so on.
+Risk is generally estimated according to different scales, such as `"low, medium, high"` or `"0 to 100, 0.0 to 1.0"`. However, how these levels are set are very differently from person to person depending on their background, experience, risk appetite and so on.
 
 
 The RRA instead embraces the idea that pure risk quantification is usually impossible, and perhaps counter-productive. Decisions maker are informed with numbers that look authoritative, but are defined by gut-feelings. 
 
-## Quantitative vs Qualitative
+### Quantitative vs Qualitative
 
 - Quantitative analysis indicates that a quantity (number, measurable) is associated with the impact and likelihood.
 - Qualitative analysis indicates that the impact and likelihood are qualified (estimated, using a list of indicators or rules).
 
-## Levels and bucketing by range
+### Levels and bucketing by range
 
 However, in practice, we generally observe that either analysis tend to produce results that require additional context for a decision maker to really understand the risk. Rather than forcing analysts to find numbers (which may be really incorrect), or guesstimate according to their internal knowledge, the RRA embrace the fact that numbers will not be exactly accurate, and not always measurable.
 
-The RRA standard levels effectively bucket risk (low, medium, high, maximum) according to ranges ("spectrum") by impact categories:
+The RRA standard levels effectively bucket risk (<span class="risk risk-low">low</span>, <span class="risk risk-medium">medium</span>, <span class="risk risk-high">high</span>, <span class="risk risk-maximum">maximum</span>) according to ranges by impact categories (reputation, productivity, financial, legal), f.e.:
 
-- If you guesstimate __or__ measure the financial loss to be __between__ 1,000 USD and 10,000, you go into bucket [low, medium, ...]
+- If you guesstimate __or__ measure the financial loss to be __between__ 1,000 USD and 10,000 USD, you go into bucket [low, medium, ...]
 - If you guesstimate __or__ measure the reputation loss to be represented as showing up in the technical news (hackernews, etc.), but not mainstream news, you go into bucket [low, medium, ...]
 
-And so on.
+And so on. The actual range and level combination must be customized for your organization. Indeed, a loss of 10,000 USD may be nothing for some, or the end of the company for others.
+
+See the RRA [Standard Levels](standard_levels) for the template and default examples that you can directly use.
 
 
-
-
-See the RRA [Standard Levels](standard_levels) for an example.
+----
+The following are upcoming categories.
 
 ## Control scoring
 TBD.

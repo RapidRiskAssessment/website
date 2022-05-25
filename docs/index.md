@@ -1,5 +1,5 @@
 ---
-<!-- layout: search # doesn't work yet-->
+layout: search
 title: Get Started!
 sidebar:
   nav: "docs"
@@ -11,4 +11,4 @@ sidebar:
 4. Play with [integrations](integrations)
 
 
-See the side bar for more documentation.
+See the side bar for more documentation, or use the search below.

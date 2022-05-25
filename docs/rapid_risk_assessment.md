@@ -1,20 +1,30 @@
 ---
-title: Rapid Risk Assessment (RRA)
+title: RRA Methodology
 description: A rapid methodology to perform risk analysis and create a lightweight threat model.
 sidebar:
   nav: "docs"
+toc: true
+toc_sticky: true
 ---
 
 We all regularly use a risk based methodology when making decisions in day to day life, without thinking about it. The
 Rapid Risk Assessment or Rapid Risk Analysis (RRA) methodology helps formalize this type of decision making and ensures
 that the process is reproducible, consistent and the results are easy to communicate.
 
-See also [Assessing Security Risk](assessing_security_risk) for an introduction to risk and our processes related to
+{: .notice--info}
+This document spells out how RRAs are typically run for a service (which is the most common and _recommended_ use case).
+
+![illustration](/assets/img/f1.jpg){: .align-center height="300px" width="250px"}
+
+See also [Risk TL;DR](assessing_security_risk) for an introduction to risk and our processes related to
 risk.
 
-# Rapid Risk Assessment
+# Rapid Risk Assessment for a service
 
-**A typical Rapid Risk Analysis/Assessment (RRA) takes about 30 minutes.** It is not a security review, a full
+{: .notice--info}
+A typical Rapid Risk Analysis/Assessment (RRA) should take about 30-60 minutes ⏰.
+
+It is not a security review, a full
 threat-model, a vulnerability assessment, or an audit. These types of activities may however follow an RRA if deemed
 appropriate or necessary.
 
@@ -61,20 +71,13 @@ Firefox accounts store user data:
 
 The RRA risk table facilitates discovering the answers to these questions.
 
-# How-to: Request an RRA of your service
-
-To manually request an RRA, please [file a bug](https://bugzilla.mozilla.org/enter_bug.cgi?product=Security+Assurance&component=Rapid%20Risk%20Analysis) to our component. Please include basic information about the project, a diagram, any relevant links and 0-2 additional people to invite for the assessment.
-
-
 # How-to: Attending and running RRAs
 
 ## When to run RRAs? What do I need to bring or do?
 
-RRAs are designed to be created and updated as needed, at any time, with or without an associated meeting. That being
-said, you should run the first RRA during the design or architecture phase of new services together with a trained risk
-analyst.
+RRAs are designed to be created and updated as needed, at any time, with or without an associated meeting. However, you really should run the first RRA during the design or architecture phase of new services together with a trained risk analyst.
 
-It is also recommended to have these things available for the RRA creation:
+It is also _strongly_ recommended to have the following things available for the RRA creation:
 
 - Name of a person or/and team responsible for the service.
 - Data flow diagram.
@@ -83,26 +86,23 @@ It is also recommended to have these things available for the RRA creation:
 
 ## When NOT to run an RRA?
 
-RRAs can only be run on services. If you have a question about a specific feature or design choice, and how it's going
+RRAs should only be run for services. If you have a question about a specific feature or design choice, and how it's going
 to impact other services: find which service your feature is tied to and see if there is already an RRA available.
 Otherwise, request an RRA for that service, this will help us (and you) assess your feature or design choice!
 
-**Note on large services**
+### (Re)scoping large services
 Large services may be be split into multiple smaller services or sub-services that handle a specific type of data and
 expose a limited set of features. This choice has to be made when running the RRA. If the sub-services are owned by
 different teams, it is a strong indicator that multiple RRAs should be run.
 
 Large services that cannot be split up not only lead to a complex assessment, but also may indicate that the service
-itself needs to be re-designed in a more secure fashion.
+itself needs to be re-designed in a more secure fashion. Any service that is too large to be understood within the time allocated for an RRA is too complex and will inevitably lead to unknown risks.
 
 ## What to focus on during an RRA?
 
-  - Getting **value for the service owner**. The service owner needs to understand what is most important to protect and
-    if they have any blind spot.
-  - **Data**. Fill in the data dictionary. You need to know most of the data the service will have access to, stored or
-    processed.
-  - **Impact assessment**. The RRA is the authority for impact levels and these are paramount. How bad can things get,
-    what's the worse case scenario?
+  - Getting **value for the service owner** (_not the risk analyst_). The service owner, developer, designer, architect, etc. needs to understand what is most important to protect and if they have any blind spot.
+  - **Data**. Fill in the [data dictionary](data_classification). You need to know most of the data the service will have access to, stored or processed.
+  - **Impact assessment**. The RRA is the authority for [impact levels](standard_levels) and these are paramount. How bad can things get, what's the worse case scenario?
   - **Recording threat scenarios**. What attack scenarios were considered? Would someone else understand it?
 
 What to **NOT** focus on:
@@ -121,114 +121,103 @@ This is a guided example of how to run an initial RRA. You will:
 - Invite the relevant people to a meeting.
 - Help them figure out risk impacts and record everything in the RRA doc.
 - Help them figure out the next steps.
-- Make them feel like they own the RRA document (and they do!).
+- Make them feel like they own the RRA document (_and they do!_).
+
+{: .notice--danger}
+All steps in this process are important. Skipping on steps is likely to lead to issues for the future you.
 
 ## Before the initial RRA meeting
 
-  - Ensure no previous RRA exist; if it does, just enhance the current RRA document
-  - Create a copy of the RRA template in the RRA Google Drive directory.
+  - Ensure no previous RRA exist; if it does, just enhance the current RRA document.
+  - Create a copy of the [RRA template](https://github.com/RapidRiskAssessment/gdocs) in **your** RRA Google Drive directory.
   - Invite 1 or 2 members (product/service owners, lead engineers, etc.) related
     to the service with a bit of technical knowledge.
-  - Ensure the invitees attempt to bring a data flow diagram and have an understanding of the data the service stores or
-    processes.
-  - You do not want more than 4 or 5 people total as this will slow down the RRA significantly. Most RRAs are
-    run 1 on 1 (2 people total).
-  - Make sure everyone invited has **edit** rights to the document, and
-    have the document opened in front of them when the RRA starts (you can also just share your screen).
-  - If this is anyone's first RRA, ensure they understand the goals of the RRA and give them a short introduction to
-    what the different steps will be. This both help them follow, and show that you have control of the meeting (see
-next section on time management).
+  - Ensure the invitees bring a data flow diagram and have an understanding of the data the service stores/processes.
+  - You do not want more than 4 or 5 people total as this will slow down the RRA significantly. Many RRAs are run 1 on 1 (i.e. 2 people total).
+  - Make sure everyone invited has **edit** rights to the document, and have the document opened in front of them when the RRA starts (share your screen).
+  - If this is anyone's first RRA, ensure they understand the goals of the RRA and give them a short introduction to what the different steps will be. This both help them follow, and show that you have control of the meeting (seenext section on time management).
 
 ## Initial RRA meeting
 
 ### Time management - take control
 
 You will be responsible for the time management when running the first RRA for a service.
-This means, you will sometimes have to cut a discussion short and be assertive: we have a tendency to jump directly to
-discussing security controls during risk discussions. While valuable, this is not the initial purpose of the RRA, and
-controls can be better discussed once the impacts have been clearly defined.
+Youwill sometimes have to cut a discussion short and be assertive: we have a tendency to jump directly to security controls during risk discussions. While valuable, this is not the main focus of the RRA: controls can be better discussed once the impacts have been clearly defined.
 
-Example red flags that indicate you should re-focus the current discussion:
+Examples of **red flags** that indicate you should re-focus the current discussion:
 
 - The discussion languishes (>1 minute) around "how to mitigate this very issue" or "we're doing X to ensure this never happens".
 - The discussion focuses on process preferences, changes, etc. instead of just filing the RRA document.
-- The discussion about how the service works takes too long (>15 minutes) and the owner has to lookup every single
-  detail (you only need an overview at this stage, or the owner has to come back when they know what service they want
-to look at).
+- The discussion about how the service works takes too long (>15 minutes) and the owner has to lookup every single  detail (you only need an overview at this stage, or the owner has to come back when they know what service they wantto look at).
 
+{: .notice--success} 
 A good tip is to **reserve 60 minutes** of RRA time in the calendar, and plan to run the RRA for only **30 minutes**.
-This leaves you with some room for error, and handle services that weren't well understood by their owners. Best case
-scenario, everyone will be happy when you cut the meeting short after only 30 minutes. In any case, always watch the
-clock! Having to use more than 60 minutes for the initial RRA is considered a failure and should not happen.
 
+This leaves you with some room for error, and handle services that weren't well understood by their owners. Best casescenario, everyone will be happy when you cut the meeting short after only 30 minutes. In any case, always watch the clock ⏰!
 
+Taking longer than 60 minutes for the initial RRA **is considered a failure** and should not happen.
 
 ### Running the RRA meeting
 
-**Note**: If this is your first RRA, ensure that someone who has run RRAs previously is present to help you. It is good
-to have attended multiple RRAs before starting your own. Your experience and understanding is key to running a
-successful RRA that will help the teams and keep the service safe.
+{: .notice--info}
+If this is your first RRA, ensure that someone who has run RRAs previously is present to help you. It is a good idea to have attended multiple RRAs before starting your own. Your experience and understanding is key to running a successful RRA that will help the teams and keep the service safe.
 
-**RRA Utilities**: There is a menu at the top of the document called the "RRA Utilities" menu. Use it to set risk
-impact, levels, data classification and marking the RRA as reviewed. Do use it as our scripts rely on this to copy RRAs
-to our RRA API.
+**RRA Utilities**: There is a menu at the top of the RRA document called the "RRA Utilities" menu. Use it to set risk impact, levels, data classification and marking the RRA as reviewed. Do use it as our scripts rely on this to copy RRAs to our RRA API.
 
 #### Metadata (1min)
 
-- Fill in the service name
-- Fill in the service owner: ask whom would be taking the decision to turn the service off in case of an incident, if
-  it's unclear. That is the service owner.
+- Fill in the service name.
+- Fill in the service owner: ask whom would be taking the decision to turn the service off in case of an incident, if  it's unclear. That is the service owner.
 - Lookup the owner's closest director or VP and add this as well.
 - Leave "service data classification" and "highest risk impact" empty for now.
 
 #### Service Notes (5min)
 
 This is where you put any notes that you feel are relevant to the understanding of the service, security, etc.
-Ask the service owner what the service does and a little bit of how it works. Ensure that you understand the service
-well.
-You should be able to reformulate what the service does, and the service owner to agree on your formulation.
-Generally, you want to copy a diagram of some sort and have links back to the RRA request bug, and the service's own
-website (which may be a vendor). This is also a good time to mention [the vendor questionnaire](https://docs.google.com/document/d/1idP1gGuEgeinoL6m_hsZ8lQ8wz64BeI-S53n_9kwMkU/edit?usp=sharing)
- if this is a vendor and it hasn't been filled in.
 
-Feel free to go back to this section at any time to add any further notes.
+Ask the service owner what the service does and a little bit of how it works. **Ensure** that you understand the service well.
+
+You should be able to reformulate what the service does, and the service owner to agree on your formulation.
+
+You will want to copy a diagram (if possible, a data flow diagram) and have links back to the RRA request (with whichever bug/issue tracking you choose to use), notes, and the service's own website (which may be a vendor). 
+
+{: .notice--primary}
+**Optional**: This is also a good time to mention [the vendor questionnaire](https://github.com/RapidRiskAssessment/gdocs) if this is a vendor and it hasn't been filled in. Your organization may have it's own process instead.
+
+Feel free to go back to this section (Service Notes) at any time to add any further notes.
 
 #### Data Dictionary (5-10 minutes)
 
-We want to know about all data the service will process or store (and not *just* store). Any data the service can touch
-or see is to be considered.
-You will need to ask the team or service owner about what *kind* of data the service processes or stores. Here are some
-examples:
+We want to know about all data the service will process or store (and not *just* store). Any data the service can touch or see is to be considered as part of the assessment.
+
+You will need to ask the team or service owner about what *kind* of data the service processes or stores. Here are some examples that you should expect:
 
 - Specific configuration data
 - User or service credentials, secrets
-- User data
+- User data (often called Personally Identified Information, or PII))
 - etc.
 
-Set the data classification for each data type in the dictionary, such as "PUBLIC", "STAFF CONFIDENTIAL", etc. by using
-the "RRA Utilities" menu.
-As an example, Mozilla uses [standard classification levels](https://wiki.mozilla.org/Security/Data_Classification).
+Set a [data classification](data_classification) for each data type in the dictionary, such as "PUBLIC", "STAFF CONFIDENTIAL", etc. by using the "RRA Utilities" menu.
 
-When you figure out what the bulk or the most important data is, set this as the "Service Data Classification" in the
-RRA metadata.
+When you figure out what the bulk of the data is, or what the most important data is, set this as the "Service Data Classification" in the RRA metadata.
 
 #### Threat Scenarios (5-10 minutes)
 
-This is where we discuss potential attack scenarios and figure out how bad things could go (worse-case scenario).
-The RRA document itself contains tips about this section as well.
-We do not record the threat types, attacker types, etc. in this model in order to save time.
-Think about the easiest attack vectors ("threat scenarios"). While we focus on recording impact, you should also ask if
-anything already happened and make a note if so, as this indicates a possible higher likelihood for the impact to occur.
+This is where we discuss potential attack scenarios and figure out how bad things could go (i.e. the worse-case scenario).
 
-Record all results and **make sure that you set an impact level** (use the "RRA Utilities" menu for this)
+{: .notice--info}
+The RRA document itself contains tips about this section as well, which should help you as you go along.
 
-**Confidentiality**: What happens if all the data is disclosed to the world?
 
-**Integrity**: What happens if the data is incorrect, misleading, website defaced, etc.?
+Do not record the threat types, attacker types, etc. in this model, instead think about the easiest attack vectors ("threat scenarios") with examples of how they may occur. While you should focus on recording impact, it is important to also ask if anything already happened. Take a note if so, as this indicates a possible higher probability for the impact to occur.
 
-**Availability**: What happens if the data or service is missing, deleted, or currently unreachable?
+The following are the high-level properties that you will consider a threat scenario for:
 
-For each, run through these questions and assign an impact level if appropriate:
+- **Confidentiality**: What happens if all the data is disclosed to the world?
+- **Integrity**: What happens if the data is incorrect, misleading, website defaced, etc.?
+- **Availability**: What happens if the data or service is missing, deleted, or currently unreachable?
+
+For each, run through the questions for these categories, and assign an impact level:
 
   - Reputation issues
     - Do we get in mainstream news? (<span class="risk risk-maximum">MAXIMUM impact</span>)
@@ -249,56 +238,50 @@ For each, run through these questions and assign an impact level if appropriate:
   - Financial issues?
     - Would it cost money? How much?
 
-Enhance these scenarios, eventually to create a complete threat model if the assessed impacts are HIGH or MAXIMUM and
-if further security work is required, or the RRA is revisited.
+Record all results and **make sure that you set an impact level** (use the "RRA Utilities" menu for this).
+
+It is adequate to enhance these scenarios in the future - eventually to create a complete threat model (specially if the assessed impacts are HIGH or MAXIMUM) and if further security work is required, or the RRA is revisited.
 
 ##### Additional tips
 
-- Whenever the productivity impact is HIGH or MAXIMUM, there is probably also a financial impact due to the cost of the
-  workforce being impacted.
-- Financial risk is sometimes hard to define, in particular when tied to contracts. When in doubt, skip it.
-- If you have any HIGH or MAXIMUM impacts, propose that a more complete threat model and pen-test be run.
-- Educate the project owners and lead developers of the project about the meaning of these risks and how the RRA can
-  help them make decisions such as which operational environment to select, what technologies to use, and how much
-effort to put into securing the project.
+- Whenever the productivity impact is HIGH or MAXIMUM, there is probably also a financial impact due to the cost of the  workforce being impacted.
+- Financial risk is sometimes hard to define, in particular when tied to contracts. When in doubt, it means there is no good data and that you should skip it.
+- Educate the project owners and lead developers of the project about the meaning of the risks you have described, and how the RRA can help them make decisions such as which operational environment to select, what technologies to use, and how much effort to put into securing the project (see also "Recommendations" below).
 
 #### Recommendations (5 minutes)
 
-While the RRA is not meant as a complete review, recommendations do come
-up and this is a great time to have a quick 5 minute chat about these.
+While the RRA is not meant to be a complete review, recommendations do come
+up and this is a great time to chat about these.
 
-- Ensure all recommendations that came up (from you or the team) are mentioned here. It's also ok to fill them as you
-  go!
-- Use the "RRA Utilities" menu to set an impact for the recommendation ("if followed, how much would it help the
-  service?") as this allow service owners to prioritize work.
-- Ensure logging and access control have been mentioned. Can these be improved? Should we alert on events?
+- Ensure all recommendations that came up (from you or the team) are mentioned here. It's also ok to fill them as you go!
+- Use the "RRA Utilities" menu to set an impact for the recommendation ("if followed, how much would it help the service?") as this allow service owners to prioritize work. HIGH and MAXIMUM threat scenarios are likely to have HIGH or above recommendations.
+- Ensure detection controls and access control have been mentioned, not just prevention controls. Can these be improved? Should we alert on events?
 - Does this service have an incident response plan defined?
-- Is the service using SSO for login?
-- Is there a web site that can be assessed? If so, you can file a vulnerability assessment request directly.
-- Did the service follow the security checklists ?
+- Is the service using SSO for login, how?
+- Is there a website or application that can be further assessed?
 
 ### Wrapping up
 
-- Make sure you've filled the "Service Data Classification" up top according to your data dictionary (what you consider
-  to be either the bulk of the data or the most important data is your classification)
-- Make sure you've also filled the "Highest Risk Impact", this is basically the high impact recorded in the threat
-  scenarios.
-- Double check with the team:
+- Make sure you've filled the "Service Data Classification" up top according to your data dictionary (what you consider to be either the bulk of the data or the most important data is your classification)
+- Make sure you've also filled the "Highest Risk Impact", this is the highest impact recorded in the threat scenarios.
+- Double check the findings with the team:
   - Present the current risk impact and ask if they think it's reasonable.
   - Present the current recommendations and ask if they think anything's missing and what they should start with.
-  - Ask the team if there's any additional security related question they want to ask or if anything wasn't covered.
-- Add Google docs comments to the recommendations and assign the comment to the service owner, to ensure they've also
-  been notified by email.
-- Make sure you have marked the RRA as reviewed by yourself in the "RRA Utilities" menu.
+  - Consider requiring leadership to acke on any recommendation that is HIGH or MAXIMUM before they ship or use the service, especially if these aren't followed.
+  - Ask the team if there is any additional security related question they want to ask or if anything wasn't covered.
+- Add Google docs comments to the recommendations and assign the comment to the service owner(s), to ensure they've also been notified by email.
 
 ## Reference documents and similar work
 
 - <https://binary.protect.io/workcard.pdf>
 - <https://en.wikipedia.org/wiki/ISO_31000>
-- <https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf>
+- [FAIR Introduction](https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf)
 - <https://infosec.mozilla.org>
+- <https://cloudsecdocs.com/devops/how_to/design/rra/>
 
-## RRA Google Docs templates
+## RRA Google Docs templates and code
 
 - [RRA Support code for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRACodeMaster.js)
 - [RRA Parsing code (convert to spreadsheet/db) for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRA2Spreadsheet.js)
+- [Vendor Questionnaire](https://github.com/RapidRiskAssessment/gdocs/blob/master/Mozilla%20Vendor%20Questionnaire%20Template.odt)
+- [RRA 3.0.3](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRA%20-%203.0.3.odt)
