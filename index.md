@@ -11,7 +11,7 @@ feature_row:
     title: "Podcasts & Talks"
     excerpt: "Listen, watch videos and experiences with the RRA and how it's used!"
     url: "docs/podcasts"
-    btn_label: "Listen in"
+    btn_label: "Listen In"
     btn_class: "btn--inverse"
   - image_path: "/assets/img/f3.jpg"
     title: "Standard Levels"
