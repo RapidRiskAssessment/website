@@ -76,3 +76,17 @@ repository: "rapidriskassessment/website"
 site-css:
   - "assets/css/risk.css"
 #  - "assets/css/site.css"
+analytics:
+  provider: "google-universal"
+  google:
+    tracking_id: "G-78Q42QC0HS"
+    anonymize_ip: false # default
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rapidriskassessment"
+
+google:
+  search_engine_id: 7f3fda8b2e55f588c
