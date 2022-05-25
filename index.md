@@ -2,12 +2,14 @@
 layout: splash
 feature_row:
   - image_path: "/assets/img/f1.jpg"
+    alt: "Risk TL;DR"
     title: "Risk: TL;DR"
     excerpt: "Start with the Risk TL;DR. A quick, broad introduction to risk assessments."
     url: "docs/assessing_security_risk"
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: "/assets/img/f2.jpg"
+    alt: "Podcasts"
     title: "Podcasts & Talks"
     excerpt: "Listen, watch videos and experiences with the RRA and how it's used!"
     url: "docs/podcasts"
@@ -15,6 +17,7 @@ feature_row:
     btn_class: "btn--inverse"
   - image_path: "/assets/img/f3.jpg"
     title: "Standard Levels"
+    alt: "Standard Levels"
     excerpt: "The reference levels for risk, scores, to use with your  assessments."
     url: "docs/standard_levels"
     btn_label: "Show Me"

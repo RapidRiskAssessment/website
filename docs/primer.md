@@ -27,7 +27,7 @@ We call the way the RRA works a "Threat Scenario based risk assessment".
 
 Through this document, we will discuss why we believe this model works well.
 
-![]()
+{: .text-nowrap}
 
 # History
 
