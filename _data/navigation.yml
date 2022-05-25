@@ -10,6 +10,8 @@ main:
 docs:
   - title: "Risk TL;DR"
     url: "docs/assessing_security_risk"
+  - title: "Why does it work?"
+    url: "docs/primer"
   - title: "RRA For Services"
     url: "docs/rapid_risk_assessment"
   - title: "Standard Levels"
