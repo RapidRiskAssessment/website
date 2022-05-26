@@ -1,4 +1,4 @@
-name: Ruby
+name: site checks
 
 on:
   push:
