@@ -15,3 +15,8 @@ Open them directly in the project's issues.
 - Run `bundle install` to install all dependencies.
 - Run `bundle exec jekyll serve --livereload` to locally serve contents for testing.
 - Run `bundle exec htmlproofer --assume-extension --url-ignore "/www.pexels.com/" ./_site` to test for broken links.
+
+## GitHub Actions status
+
+[![site checks](https://github.com/RapidRiskAssessment/website/actions/workflows/checks.yml/badge.svg)](https://github.com/RapidRiskAssessment/website/actions/workflows/checks.yml)
+[![pages-build-deployment](https://github.com/RapidRiskAssessment/website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RapidRiskAssessment/website/actions/workflows/pages/pages-build-deployment)
