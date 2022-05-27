@@ -281,7 +281,4 @@ up and this is a great time to chat about these.
 
 ## RRA Google Docs templates and code
 
-- [RRA Support code for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRACodeMaster.js)
-- [RRA Parsing code (convert to spreadsheet/db) for the Google Docs template](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRA2Spreadsheet.js)
-- [Vendor Questionnaire](https://github.com/RapidRiskAssessment/gdocs/blob/master/Mozilla%20Vendor%20Questionnaire%20Template.odt)
-- [RRA 3.0.3](https://github.com/RapidRiskAssessment/gdocs/blob/master/RRA%20-%203.0.3.odt)
+- See the [integrations](integrations)!
