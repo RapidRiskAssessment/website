@@ -2,6 +2,7 @@
 layout: single
 title: Assessing Security Risk
 description: An open framework to assess security risk from an operational perspective
+read_time: true
 sidebar:
   nav: "docs"
 ---

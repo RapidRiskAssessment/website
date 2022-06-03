@@ -72,7 +72,7 @@ minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon"
 #          - Visualization: "visualisation"
 social-network-links:
         github: rapidriskassessment
-repository: "rapidriskassessment/website"
+repository: "RapidRiskAssessment/website"
 site-css:
   - "assets/css/risk.css"
 #  - "assets/css/site.css"
@@ -90,3 +90,6 @@ footer:
 
 google:
   search_engine_id: 7f3fda8b2e55f588c
+
+lunr:
+  search_within_pages: true
