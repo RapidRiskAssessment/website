@@ -46,6 +46,8 @@ Because this does not scale well for fast-paced development, and because the ris
 - Vulnerability-based assessments, such as [CVSS](https://www.first.org/cvss/) which works well to standardize the impact of vulnerabilities, and includes some probability factors (e.g.: "can this be exploited locally, via network?" which are used to estimate how likely it is for the vulnerability to be exploited)
 - Technique-based assessments, such as [ATT&CK](https://attack.mitre.org/) where threats are categorized by attack type and generalized techniques, and very detailled sub-techniques and procedures (e.g. "The file `/Library/Preferences/com.apple.loginwindow.plist` is modified by an attacker [...]". While an interesting list of possible techniques, these are not based on a threat model and do not provide much flexibility, and therefore tends to be more useful to characterize and remediate to incidents rather than be used for risk discovery, as a threat model or risk assessment normally would.
 - Checkbox or survey based assessments ("Do you do x?, do you have z?") which are feature based (e.g.: If your door has a lock it passes. But how good is the lock, and in what context are generally not answered by these frameworks.)
+  - A sub-category of checkbox-based assessments, such as [ICTM](https://github.com/defuse/ictm) which ignores the brainstorming (threat) models in favor of "security invariants", which are proponents of using checkbox-based assessments as a __complete replacement__ to threat models. Note that the invariants themselves (i.e. control requirements) are produced through a brainstorming exercice.
+  - Another sub-category, which is effectively an advanced version of checkbox-based assessments, which are then certified by 3rd parties, such as [Common Criterias](https://www.commoncriteriaportal.org/) or 1970's [Orange book (ITSEC)](https://infogalactic.com/info/Trusted_Computer_System_Evaluation_Criteria).
 - Frameworks which attempt to address specific issues with assessing risk accurately (e.g [FAIR](https://infogalactic.com/info/Factor_analysis_of_information_risk)), though these tend to focus on making all aspects of risk quantifiable (usually through assigning a somewhat precise dollar amount, or a fixed number from 0 to 100).
 
 
@@ -149,6 +151,6 @@ TBD.
 
 TBD.
 
-## Notes on inter-ramework compatibility
+## Notes on inter-framework compatibility
 
 TBD.
