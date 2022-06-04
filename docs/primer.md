@@ -41,7 +41,7 @@ Frameworks based on ISO 3100 tend to aim for correctness and require strict, ext
 
 Because this does not scale well for fast-paced development, and because the risk may have been realized in practice before the analysis is completed, several variations are usually implemented by software development companies and government bodies, for example:
 
-- [NIST SP 800-30](https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final), [NIST CyberSecurity Framework](https://www.nist.gov/cyberframework), where the former is a more typical risk assessment process and the later focuses on response to incidents regardless of risk but doe not directly integrate to the development lifecycle of systems, products, etc.
+- [NIST SP 800-30](https://csrc.nist.gov/publications/detail/sp/800-30/rev-1/final), [NIST CyberSecurity Framework](https://www.nist.gov/cyberframework), where the former is a more typical risk assessment process and the latter focuses on response to incidents regardless of risk, but does not directly integrate to the development lifecycle of systems, products, etc.
 - [STRIDE](https://infogalactic.com/info/STRIDE_(security)), [DREAD](https://infogalactic.com/info/DREAD_(risk_assessment_model)) for software development. These simply list threat categories, or types, that you should think about when writing software specifically. It's definitely useful, though it generally only works for the software aspect of risk analysis specifically. It does not tell you how much money it's going to cost or how the company reputation may be affected if the software breaks, for example.
 - Vulnerability-based assessments, such as [CVSS](https://www.first.org/cvss/) which works well to standardize the impact of vulnerabilities, and includes some probability factors (e.g.: "can this be exploited locally, via network?" which are used to estimate how likely it is for the vulnerability to be exploited)
 - Technique-based assessments, such as [ATT&CK](https://attack.mitre.org/) where threats are categorized by attack type and generalized techniques, and very detailled sub-techniques and procedures (e.g. "The file `/Library/Preferences/com.apple.loginwindow.plist` is modified by an attacker [...]". While an interesting list of possible techniques, these are not based on a threat model and do not provide much flexibility, and therefore tends to be more useful to characterize and remediate to incidents rather than be used for risk discovery, as a threat model or risk assessment normally would.
@@ -70,7 +70,7 @@ The resulting process is licensed under the [MPL](/LICENSE).
 - Surveys and fully automated analysis systems don't work well as they do not carry much context, or not concise enough for pratical use. Engineers want to talk to humans that they can talk to about ideas, issues, worries.
 
 ## Human versus machine
-*We specifically singled out some of the lesson learned, in particular our ability as humans to assess impact vs probability.*
+*We specifically singled out some lessons learned, in particular our ability as humans to assess impact vs probability.*
 
 > Risk is assessed by humans **and** machines.
 
