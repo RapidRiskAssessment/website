@@ -5,6 +5,7 @@ sidebar:
   nav: "docs"
 toc: true
 toc_sticky: true
+read_time: true
 ---
 
 <!--

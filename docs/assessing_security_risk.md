@@ -2,6 +2,7 @@
 layout: single
 title: Assessing Security Risk
 description: An open framework to assess security risk from an operational perspective
+read_time: true
 sidebar:
   nav: "docs"
 ---
@@ -95,7 +96,6 @@ See also: [Standard Levels reference](standard_levels)
 - [Introduction to modern risk analysis](https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf)
 - [ISO 31000](https://www.iso.org/iso-31000-risk-management.html)
 - [ISO 27001](https://en.wikipedia.org/wiki/ISO/IEC_27001)
-- [In
-  French - EBIOS method](https://www.ssi.gouv.fr/guide/ebios-2010-expression-des-besoins-et-identification-des-objectifs-de-securite/)
+- [EBIOS method](https://www.ssi.gouv.fr/en/guide/ebios-risk-manager-the-method/)
 - [CIS Critical Security Controls](https://www.cisecurity.org/controls/cis-controls-list/)
 - [Visualizations common in Risk Management](https://creately.com/blog/diagrams/risk-management-techniques/)
