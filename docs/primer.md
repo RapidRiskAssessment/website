@@ -122,6 +122,17 @@ And so on. The actual range and level combination must be customized for your or
 
 See the RRA [Standard Levels](standard_levels) for the template and default examples that you can directly use.
 
+## Threat Scenarios
+
+> A **Threat Scenario** is a short sentence describing a probable malicious action a threat actor could take that leads to harm to an asset.
+
+A Threat Scenario ignores the controls and focuses on the outcome or objective, if an attacker were to be successful with their attack. In essence, it is an example (a scenario!) of what could happen. The threat scenario is then scored in terms of impacts with a standard level.
+
+
+A typical threat scenario is constructeds as such:
+
+`[LOW/MEDIUM/HIGH/MAXIMUM] [Attacker/Actor] compromises [system/service/project] with [vulnerability] which causes [description of impact to assets].`
+
 
 ----
 The following are upcoming categories.
@@ -130,10 +141,6 @@ The following are upcoming categories.
 TBD.
 
 ## Data Classification and dictionary
-
-TBD.
-
-## Threat Scenarios
 
 TBD.
 
