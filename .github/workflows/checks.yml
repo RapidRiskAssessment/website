@@ -22,4 +22,4 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
       - name: Check bad links
-        run: bundle exec htmlproofer --assume-extension --url-ignore "/www.pexels.com/" ./_site
+        run: bundle exec htmlproofer --assume-extension .html --enforce-https=false --ignore-urls https://www.pexels.com/license/ ./_site

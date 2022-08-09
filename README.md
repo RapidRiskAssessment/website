@@ -14,7 +14,7 @@ Open them directly in the project's issues.
 - Checkout this repository.
 - Run `bundle install` to install all dependencies.
 - Run `bundle exec jekyll serve --livereload` to locally serve contents for testing.
-- Run `bundle exec htmlproofer --assume-extension --url-ignore "/www.pexels.com/" ./_site` to test for broken links.
+- Run `bundle exec htmlproofer --assume-extension .html --enforce-https=false --ignore-urls https://www.pexels.com/license/ ./_site` to test for broken links locally.
 
 ## GitHub Actions status
 
