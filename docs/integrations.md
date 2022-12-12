@@ -11,7 +11,7 @@ List of tools which are used to perform RRAs.
 
 Public tools which are used to visualize RRA data.
 
-- [Jeff's Risk HeatMap](https://github.com/jeffbryner/riskHeatMap)
+- ![Heatmap](/assets/img/heatmap-tweet.jpg)[Jeff's Risk HeatMap](https://github.com/jeffbryner/riskHeatMap)
 
 # Templates and parsers
 
