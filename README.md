@@ -6,7 +6,7 @@ Propose your changes as a PR directly, in Markdown format.
 
 ## Issues and discussion
 
-Open them directly in the project's issues. 
+Open them directly in the project's issues. We also have a public [Matrix](https://matrix.org/faq/) chatroom: [`#RRA:matrix.org`](https://matrix.to/#/#RRA:matrix.org).
 
 ## Local testing
 
