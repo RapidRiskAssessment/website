@@ -52,7 +52,7 @@ Mozilla's Information security website can be found at [https://infosec.mozilla.
 # Participate
 
 This website, reference and tools are all hosted under the [MPL](LICENSE) on [https://github.com/rapidriskassessment](https://github.com/rapidriskassessment).
-Please submit issues, pull-requests, etc. as necessary. You may also consult or request to participate to the [high level project board](https://github.com/orgs/RapidRiskAssessment/projects/1/views/1).
+Please submit issues, pull-requests, etc. as necessary. You may also consult or request to participate to the [high level project board](https://github.com/orgs/RapidRiskAssessment/projects/1/views/1) or [chat on Matrix](https://matrix.to/#/#RRA:matrix.org).
 
 
 See also [CONTRIBUTORS](CONTRIBUTORS) for a list of contributors.
