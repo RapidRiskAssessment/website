@@ -101,6 +101,8 @@ This section describes the fundamental concepts utilized by the RRA. These conce
 
 ## Standard Levels
 
+> A **Standard Level** represents a formalized and concise measure for risk, risk impact, [probability indicators](indicators), mitigation recommendations and control scores.
+
 Risk is generally estimated according to different scales, such as `"low, medium, high"` or `"0 to 100, 0.0 to 1.0"`. However, how these levels are set are very differently from person to person depending on their background, experience, risk appetite and so on.
 
 
@@ -134,6 +136,8 @@ The Threat Scenarios ignore the security controls and focuses on the outcome or 
 A typical Threat Scenario is constructed as such:
 
 `[`<span class="risk risk-low">low</span>, <span class="risk risk-medium">medium</span>, <span class="risk risk-high">high</span>, <span class="risk risk-maximum">maximum</span>`] [Attacker/Actor]` compromises `[asset/system/service/project]` with `[vulnerability]` which causes `[description of impact, with standard level justification]`.
+
+See [Threat Scenarios](threat_scenarios) for more details on how to create Threat Scenarios.
 
 ## Control scoring
 

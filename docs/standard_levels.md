@@ -9,6 +9,8 @@ toc_sticky: true
 
 [Skip to level definitions](#levels-definitions){: .btn .btn--inverse} [Skip to scores](#scoring){: .btn .btn--inverse}
 
+> A **Standard Level** represents a formalized and concise measure for risk, risk impact, probability indicators, mitigation recommendations and control scores.
+
 The goal of this document is to ensure consistency, coherence between security documents which measure risk, impact or scores security controls.
 
 Each level is documented with the following information:

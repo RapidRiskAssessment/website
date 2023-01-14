@@ -1,5 +1,0 @@
----
-title: Likelihood Indicators
----
-
-TBD
