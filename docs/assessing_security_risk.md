@@ -68,7 +68,7 @@ Different scanners, such as the [Mozilla Observatory](https://observatory.mozill
 bug metrics, etc. emit short and lightweight JSON documents that contain an indicator of how likely an event or finding
 is to contribute to the likelihood for a service to be attacked successfully.
 
-See also: How to use, generate and understand [likelihood indicators](likelihood_indicators)
+See also: How to use, generate and understand [probability indicators](indicators)
 
 ## Service mapper (risk register)
 

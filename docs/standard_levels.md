@@ -9,6 +9,8 @@ toc_sticky: true
 
 [Skip to level definitions](#levels-definitions){: .btn .btn--inverse} [Skip to scores](#scoring){: .btn .btn--inverse}
 
+> A **Standard Level** represents a formalized and concise measure for risk, risk impact, probability indicators, mitigation recommendations and control scores.
+
 The goal of this document is to ensure consistency, coherence between security documents which measure risk, impact or scores security controls.
 
 Each level is documented with the following information:
@@ -33,7 +35,7 @@ The scores are used to score security preventive or detection controls.
 When implementing these levels, you will want to customize them for your own risk tolerance. For example, how much financial, reputation, etc. damage maps to which level. To make this easier, the values to changes are <u>underlined</u>.
 
 {: .notice--warning}
-**This is important**: When using the levels for assessing risk impact or probability, it is very strongly recommended to justify the level by providing your own justification of impacts with [threat scenarios](primer#threat-scenarios).
+**This is important**: When using the levels for assessing risk impact or probability, it is very strongly recommended to justify the level by providing your own justification of impacts with [threat scenarios](threat_scenarios). When unsure which level to choose, it can be helpful to think in terms of "Why Not Higher" and "Why Not Lower", i.e. try to justify at a lower or high level and see if it makes sense. Pick the closest.
 
 # Levels definitions
 
