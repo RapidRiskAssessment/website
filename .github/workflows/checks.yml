@@ -21,5 +21,4 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
       - name: Check bad links
-        run: bundle exec htmlproofer --only-4xx --assume-extension .html --no-enforce-https --ignore-urls https://www.pexels.com/license/,https://www.sec.gov/,https://matr
-ix.to/#/#RRA:matrix.org,https://github.com/mozilla/service-map/blob/master/models/v1/indicators/indicator.py#L61-L89 ./_site
+        run: bundle exec htmlproofer --only-4xx --assume-extension .html --no-enforce-https --ignore-urls https://www.pexels.com/license/,https://www.sec.gov/,https://matrix.to/#/#RRA:matrix.org,https://github.com/mozilla/service-map/blob/master/models/v1/indicators/indicator.py#L61-L89 ./_site
