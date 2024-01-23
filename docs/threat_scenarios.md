@@ -5,11 +5,11 @@ sidebar:
   nav: "docs"
 ---
 
-> A Threat Scenario is a short sentence describing a probable malicious action an attacker could take, that impacts an asset or service.
+> A Threat Scenario is a short sentence describing a probable malicious action an attacker could take, that impacts an asset or service, similar to the concept of Critical User Journeys (CUJ) but it's an Attacker User Journey (AUJ).
 
-A typical Threat Scenario is constructed as such:
+A typical Threat Scenario (or Attacker User Journey, AUJ) is typically constructed as such:
 
-`[`<span class="risk risk-low">low</span>, <span class="risk risk-medium">medium</span>, <span class="risk risk-high">high</span>, <span class="risk risk-maximum">maximum</span>`] [Attacker/Actor]` compromises `[asset/system/service/project]` with `[vulnerability]` which causes `[description of impact, with standard level justification]`.
+`[`<span class="risk risk-low">low</span>, <span class="risk risk-medium">medium</span>, <span class="risk risk-high">high</span>, <span class="risk risk-maximum">maximum</span>`]`, `The Attacker/Actor` compromises `asset/system/service/project` with `vulnerability` which causes `description of impact, with standard level justification`.
 
 ## How are Threat Scenarios defined?
 
@@ -60,4 +60,4 @@ Ranking the Threat Scenario's risk impact is simple: take the highest level sele
 
 
 {: .notice--success}
-<span class="risk risk-medium">medium</span> An attacker picks up an item at the supermarket, hides it on their person and walks out of the store.
+<span class="risk risk-medium">medium</span> An attacker picks up an item at the supermarket, hides it on their person and walks out of the store. The store loses up to 100 USD every day the attacker visits.
