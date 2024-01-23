@@ -12,6 +12,7 @@ Open them directly in the project's issues. We also have a public [Matrix](https
 
 - Install Ruby, Gem, Bundler (e.g.: `apt-get install ruby gem bundler curl`).
 - Checkout this repository.
+- Don't forget to configure GEMs if you haven't, e.g. `export GEM_HOME=~/.ruby/  PATH="$PATH:~/.ruby/bin`.
 - Run `bundle install` to install all dependencies.
 - Run `bundle exec jekyll serve --livereload` to locally serve contents for testing.
 - Run `bundle exec htmlproofer --assume-extension .html --enforce-https=false --ignore-urls https://www.pexels.com/license/ ./_site` to test for broken links locally.
