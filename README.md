@@ -15,7 +15,8 @@ Open them directly in the project's issues. We also have a public [Matrix](https
 - Don't forget to configure GEMs if you haven't, e.g. `export GEM_HOME=~/.ruby/  PATH="$PATH:~/.ruby/bin`.
 - Run `bundle install` to install all dependencies.
 - Run `bundle exec jekyll serve --livereload` to locally serve contents for testing.
-- Run `bundle exec htmlproofer --assume-extension .html --no-enforce-https --ignore-urls https://www.pexels.com/license/ ./_site` to test for broken links locally.
+- Run `bundle exec htmlproofer --assume-extension .html --no-enforce-https --ignore-urls https://www.pexels.com/license/,https://www.sec.gov/,https://matr
+ix.to/#/#RRA:matrix.org,https://github.com/mozilla/service-map/blob/master/models/v1/indicators/indicator.py#L61-L89 ./_site` to test for broken links locally.
 
 ## GitHub Actions status
 
